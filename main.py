@@ -5,7 +5,7 @@ from analyzer import analyze_products
 from telegram_bot import send_to_telegram
 
 def main():
-    keyword = "灯"  # Kalit soвЂz вЂ” oвЂzgartirish mumkin
+    keyword = " LED灯 "  # Kalit soвЂz вЂ” oвЂzgartirish mumkin
     print("[+] Mahsulotlar qidirilmoqda...")
     products = search_taobao(keyword, pages=1)
 
