@@ -1,6 +1,6 @@
 # main.py
 
-from scraper_requests import search_taobao
+from scraper_playwright import search_taobao
 from analyzer import analyze_products
 from telegram_bot import send_to_telegram
 
