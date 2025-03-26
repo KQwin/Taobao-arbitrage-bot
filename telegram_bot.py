@@ -15,8 +15,5 @@ def send_to_telegram(products):
         return
 
     for product in products[:10]:  # faqat 10 tasi yuboriladi
-        message = f"рџ“¦ {product['title']}
-"                   f"рџ’° Narx: ВҐ{product['price']}
-"                   f"рџ”Ґ Sotilgan: {product['sold']}
-"                   f"рџ”— Link: {product['link']}"
+        message = message = f"📦 {product['title']}\n💰 Narx: ¥{product['price']}\n🔥 Sotilgan: {product['sold']}\n🔗 Link: {product['link']}"
         bot.send_message(chat_id=TELEGRAM_CHAT_ID, text=message)
