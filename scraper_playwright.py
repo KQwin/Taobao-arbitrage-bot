@@ -1,4 +1,3 @@
-# scraper_playwright.py
 # Shohanshohning Taobao avtomatik tahlilchi botining Playwright asosidagi scraper moduli
 
 from playwright.sync_api import sync_playwright
