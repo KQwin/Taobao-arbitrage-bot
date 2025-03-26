@@ -5,6 +5,6 @@ services:
     plan: free
     buildCommand: |
       pip install -r requirements.txt
-      playwright install chromium
+     playwright install --with-deps
     startCommand: python main.py
     autoDeploy: false
