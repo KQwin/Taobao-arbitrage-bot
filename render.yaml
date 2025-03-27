@@ -1,9 +1,0 @@
-services:
-  - type: worker
-    name: taobao-arbitrage-bot
-    env: python
-    plan: starter
-    buildCommand: |
-      pip install -r requirements.txt
-      playwright install chromium
-    startCommand: python main.py
