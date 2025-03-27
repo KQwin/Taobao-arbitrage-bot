@@ -1,16 +1,6 @@
-
-# render.yaml
-# Render.com uchun ishga tushirish konfiguratsiyasi
-
 services:
   - type: worker
-    name: taobao-arbitrage-bot
-    env: python
-    plan: starter
-    buildCommand: |
-      curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
-      apt-get install -y nodejs
-      pip install -r requirements.txt
-      playwright install --with-deps
+    name: taobao-arbitraj-bot
+    runtime: python
+    buildCommand: bash build.sh
     startCommand: python bot.py
-    autoDeploy: false
