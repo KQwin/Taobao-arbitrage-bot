@@ -1,0 +1,14 @@
+
+# render.yaml
+# Render.com uchun ishga tushirish konfiguratsiyasi
+
+services:
+  - type: worker
+    name: taobao-arbitrage-bot
+    env: python
+    plan: starter
+    buildCommand: |
+      pip install -r requirements.txt
+      playwright install --with-deps
+    startCommand: python main.py
+    autoDeploy: false
